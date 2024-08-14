@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Coversor de Moédas</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="cabecalho">
+            <h1>Coversor De moédas</h1>
+        </header>
+
+        <main class="content">
+
+            <label>
+                Coverter <b>de</b>
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Coverter <b>para</b>
+                <select id="select">
+                    <option>US$ Dólar Americano</option>
+                    <option>€ Euro</option>
+                </select>
+            </label>
+            
+            <label>
+                Valor
+                <input type="number" placeholder="R$ 10.000.00" id="valorInput">
+            </label>
+
+            <button type="button" id="btn">Coverter</button>
+
+            <section>
+                <article>
+                    <img src="./desing/brasil.jpg" alt="real">
+                    <p>Real</p>
+                    <p id="valor-real"> R$ 10.000,00</p>
+                </article>
+
+                <img src="desing/arrow.jpg"  alt="">
+
+                <article>
+                    <img src="./desing/USA.png" id="image" alt="">
+                    <p id="changetext">Dólar</p>
+                    <p id="currencyText">US$ 52,935.52</p>
+                </article>
+            </section>
+
+        </main>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
